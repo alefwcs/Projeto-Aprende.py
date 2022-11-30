@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style modulo1.css">
+    <title>Módulo 4</title>
+</head>
+<STYLE>A {text-decoration: none;} </STYLE> <!--Tirar Sublinhado do Link -->
+<!--/////////////////////////////////////////////MENU PADRÃO////////////////////////////////////////////-->
+<body>
+    <div id = 'All'>
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <h2><a href='/Pagina_Incial'>Aprende.py</a></h2>
+                    <img class="logo" src = "../img/logo.png" width="60" height="60" >
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="/Exercicios" class="nav-link">Exercicios Práticos</a></li>
+                        <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li> 
+                        <li class="nav-item"><a href="/Planeta_1" class="nav-link">Módulos</a></li>
+                        <li class="nav-item"><a href="/" class="nav-link">Sair</a></li> <!--Colocar como saída a pagina do inicial-->
+    
+                    </ul>
+                </div>
+    
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <center>
+                    <li class="nav-item"><a href="/Exercicios" class="nav-link">Exercicios Práticos</a></li>
+                    <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li> 
+                    <li class="nav-item"><a href="/Planeta_1" class="nav-link">Módulos</a></li>
+                    <li class="nav-item"><a href="/" class="nav-link">Sair</a></li>
+                </center>
+            </div>
+        </header>
+<!--///////////////////////////////////////////////////MENU PADRÃO ///////////////////////////////////////////-->
+
+<div class= 'main'>
+    <div class = 'conteudo'>
+        <div class ='indice'>
+            <label for="toggle-1">
+                <h1 class = 'sum-titulo'>Sumário [Mostrar/Esconder]</h1>
+              </label>
+              <input type="checkbox" id="toggle-1">
+              <div id="mostra">
+                <ul class = "sumario">
+                    <li class="sum-item"><a href="#Titulo1" > Variáveis disponíveis</a></li>
+                    <li class="sum-item"><a href="#Titulo2" > Introdução</a></li> 
+                    <li class="sum-item"><a href="#Titulo3" > Tipo Inteiro (int)</a></li>
+                    <li class="sum-item"><a href="#Titulo4" > Ponto Flutuante ou Decimal (float)</a></li>
+                    <li class="sum-item"><a href="#Titulo5" > Complexo (complex) </a></li>
+                    <li class="sum-item"><a href="#Titulo6" > String (str) </a></li>
+                    <li class="sum-item"><a href="#Titulo7" > Boolean (bool) </a></li>
+                    <li class="sum-item"><a href="#Titulo8" > Listas (list) </a></li>
+                    <li class="sum-item"><a href="#Titulo9" > Tuplas (tuple) </a></li>
+                    <li class="sum-item"><a href="#Titulo10" > Dicionários (dict) </a></li>
+                </ul>
+              </div>  
+        </div>
+       
+        <h1 class = 'titulo'><a name="Titulo1"></a> Variáveis disponíveis <br> em python</h1>
+        <h2 class = 'subtitulo'><a name="Titulo2"></a> Introdução</h2>
+        <p class = 'corpo'>Python é uma linguagem dinamicamente tipada, o que significa que não é necessário declarar o tipo de variável ou fazer casting (mudar o tipo de variável), pois o Interpretador se encarrega disso para nós!</p>
+        <p class = 'corpo'> Isso significa também que o tipo da variável poder variar durante a execução do programa.</p>
+        <p class = 'corpo'>Os tipos de dados padrão do Python são:</p>
+
+        <ul  class = 'corpo'>   
+            <li class="item">Inteiro (int)</li>
+            <li class="item">Ponto Flutuante ou Decimal (float)</li>
+            <li class="item">Tipo Complexo (complex)</li>
+            <li class="item">String (str)</li>
+            <li class="item">Boolean (bool)</li>
+            <li class="item">List (list)</li>
+            <li class="item">Tuple</li>
+            <li class="item">Dictionary (dic)</li>
+        </ul>
+ 
+
+        <h2 class = 'subtitulo'><a name="Titulo3"></a>Tipo Inteiro (int)</h2>
+            <p class = 'corpo'>O tipo inteiro é um tipo composto por caracteres numéricos (algarismos) inteiros.</p>
+            <p class = 'corpo'>É um tipo usado para um número que pode ser escrito sem um componente decimal, podendo ter ou não sinal, isto é: ser positivo ou negativo.</p>
+            <p class = 'corpo'>Por exemplo, 21, 4, 0, e −2048 são números inteiros, enquanto 9.75, 1/2, 1.5 não são.</p>
+            <p class = 'corpo'>Exemplos:</p>
+            <center><img src="../img/int.PNG"></center>
+            <p class = 'corpo'>Saída:</p>
+            <center><img src="../img/int 2.PNG"></center>
+    
+
+
+        <h2 class = 'subtitulo'><a name="Titulo4"></a>Ponto Flutuante ou Decimal (float)</h2>
+            <p class = 'corpo'>⠀É um tipo composto por caracteres numéricos (algarismo) decimais.</p>
+            <p class = 'corpo'>⠀O famoso ponto flutuante é um tipo usado para números racionais (números que podem ser representados por uma fração) informalmente conhecido como “número quebrado”.</p>
+            <p class = 'corpo'>⠀Exemplos:</p>
+            <center><img src="../img/float 1.PNG"></center>
+            <p class = 'corpo'>Saída:</p>
+            <center><img src="../img/float 2.PNG"></center>
+
+    <h2 class="subtitulo"><a name="Titulo5"></a>Complexo (complex)</h2>
+        <p class="corpo">Tipo de dado usado para representar números complexos (isso mesmo, aquilo que provavelmente estudou no terceiro ano do ensino médio).</p>
+        <p class="corpo">Esse tipo normalmente é usado em cálculos geométricos e científicos.</p>
+        <p class="corpo">Um tipo complexo contem duas partes: a parte real e a parte imaginária, sendo que a parte imaginária contem um j no sufixo.</p>
+        <p class="corpo">A função complex(real[, imag]) do Python possibilita a criação de números imaginários passando como argumento: real, que é a parte Real do número complexo e o argumento opcional imag, representando a parte imaginária do número complexo.</p>
+        <p class="corpo">Exemplos:</p>
+        <center><img src="../img/complex 1.PNG"></center>
+        <p class="corpo">Saída:</p>
+        <center><img src="../img/complex 2.PNG"></center>
+    
+    <h2 class="subtitulo"><a name="Titulo6"></a>String (str)</h2>
+        <p class="corpo">É um conjunto de caracteres dispostos numa determinada ordem, geralmente utilizada para representar palavras, frases ou textos.</p>
+        <p class="corpo">Exemplos:</p>
+        <center><img src="../img/str 1.PNG"></center>
+        <p class="corpo">Saída:</p>
+        <center><img src="../img/str 2.PNG"></center>
+    
+    <h2 class="subtitulo"><a name="Titulo7"></a>Boolean (bool)</h2>
+        <p class="corpo">Tipo de dado lógico que pode assumir apenas dois valores: falso ou verdadeiro (False ou True em Python).</p>
+        <p class="corpo">Na lógica computacional, podem ser considerados como 0 ou 1.</p>
+        <p class="corpo">Exemplos:</p>
+        <center><img src="../img/bool 1.PNG"></center>
+        <p class="corpo">Saída:</p>
+        <center><img src="../img/bool 2.PNG"></center>
+    
+    <h2 class="subtitulo"><a name="Titulo8"></a>Listas (list)</h2>
+        <p class="corpo">Tipo de dado muito importante e que é muito utilizado no dia a dia do desenvolvedor Python!</p>
+        <p class="corpo">Listas agrupam um conjunto de elementos variados, podendo conter: inteiros, floats, strings, outras listas e outros tipos.</p>
+        <p class="corpo">Elas são definidas utilizando-se colchetes para delimitar a lista e vírgulas para separar os elementos, veja alguns exemplo abaixo:</p>
+        <center><img src="../img/list 1.PNG"></center>
+        <p class="corpo">Saída:</p>
+        <center><img src="../img/list 2.PNG"></center>
+    
+    <h2 class="subtitulo"><a name="Titulo9"></a>Tuplas (tuple)</h2>
+        <p class="corpo">Assim como Lista, Tupla é um tipo que agrupa um conjunto de elementos.</p>
+        <p class="corpo">Porém sua forma de definição é diferente: utilizamos parênteses e também separado por vírgula.</p>
+        <p class="corpo">A diferença para Lista é que Tuplas são imutáveis, ou seja, após sua definição, Tuplas não podem ser modificadas.</p>
+        <p class="corpo">Vamos ver alguns exemplos:</p>
+        <center><img src="../img/tupla 1.PNG"></center>
+        <p class="corpo">Saída:</p>
+        <center><img src="../img/tupla 2.PNG"></center>
+        <p class="corpo">Caso haja uma tentativa de alterar os itens de uma tupla após sua definição, como no código a seguir:</p>
+        <center><img src="../img/tupla 3.PNG"></center>
+        <p class="corpo">O seguinte erro do tipo TypeError será lançado pelo interpretador do Python:</p>
+        <center><img src="../img/tupla 4.PNG"></center>
+    
+    <h2 class="subtitulo"><a name="Titulo10"></a>Dicionários (dict)</h2>
+        <p class="corpo">Dict é um tipo de dado muito flexível do Python.</p>
+        <p class="corpo">Eles são utilizados para agrupar elementos através da estrutura de chave e valor, onde a chave é o primeiro elemento seguido por dois pontos e pelo valor.</p>
+        <p class="corpo">Vamos ver alguns exemplos:</p>
+        <center><img src="../img/dict 1.PNG"></center>
+        <p class="corpo">Saída:</p>
+        <center><img src="../img/dict 2.PNG"></center>
+        <a href="#" class="btn"></a>
+        
+    
+    <div class = "row" >
+        <div class="menu">
+            <div class= "template">
+                    <a href = "/Modulo2/QuizVariavel"><button class = "botao-mundo">Faça o Quiz!</button></a><br>
+            </div>
+        </div>  <!-- Fechar Menu -->
+    </div> <!-- Fechar Row -->
+    
+    <script src="../js/modulo4.js"></script>
+    </div>
+</div>
+
+
+
+</body>
+</html>

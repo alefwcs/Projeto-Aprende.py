@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: none;
+    color: white;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#101220; 
+    overflow-x: hidden;
+}
+
+
+/* //////////////////////////////////////////////MENU PADRÃO /////////////////////////////////////////////*/
+
+/*CABEÇARIO*/
+header {
+    background-color: #40254B;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);   
+}
+
+h2{
+    margin: 0 15px;
+    font-family: 'Quicksand', sans-serif; 
+ 
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+a:hover{
+    color: #272262;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* //////////////////////////////////////////////final do MENU PADRÃO /////////////////////////////////////////////*/
+
+.main{
+    margin-top: 20px;
+    padding: 60px;
+
+}
+
+.titulo{ /*Titulo*/
+    text-align: center; 
+    font-family: 'Quicksand', sans-serif;
+    color: #ADD8E6;
+    margin-top: 4px;
+    font-size: 40px;
+}
+.sum-titulo{
+    text-align: left; 
+    font-family: 'Quicksand', sans-serif;
+    color: #40254B;
+    font-size: 20px;
+}
+
+.sumario{
+   
+    margin-top: 5px;
+    text-align: left;
+    padding: 10px 20px; /* para cima/baixo e um para esquerda/direita, escrevemos dois valores: padding: 5px 10px;  */
+    font-size: 15px;
+    font-family: 'Nunito';
+}
+
+.sum-item{
+    margin-top: 10px;
+}
+
+.card {
+  
+    padding: 30px;
+    margin: 20px;
+    width: 600px;
+   ;
+  }
+
+
+  .card p {
+    color: #a3a5ae;
+    font-size: 16px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////////Responsivo///////////////////////////////////////////////////*/
+
+@media screen and (min-width: 1200px){
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+}
+
+@media screen and (max-width:1200px) {
+    
+    .menu{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+}
+
+
+@media screen and (min-width:769px) and (max-width: 1026px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    
+    embed{ 
+        width: 100%;
+        height: auto;
+    }
+    
+    .titulo{
+
+        padding: 0.5% 12%;
+        font-size:30px;
+    }
+
+    .subtitulo{
+        padding: 0.5% 12%;
+        font-size:20px;
+    }
+
+    .corpo{
+        padding: 0.5% 12%;
+        font-size:16px;
+    }
+
+    .conteudo{
+        padding: 0.5% 12%;
+        font-size:16px;
+    }
+    li{
+        padding: 0.5% 12%;
+        font-size:16px
+    }
+    .botao-mundo{
+        width: 250px;
+        font-size:16px;
+       
+    }
+}
+
+
+@media screen and (min-width: 390px)and (max-width: 844px) {
+
+    /*Menu Responsivo*/
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+
+    embed{ /*Colunas dos imagens macacos, para modificar e ficar responsivo*/
+        width: 100%;
+        height: auto;
+    }
+    
+    
+     .titulo{
+
+        padding: 0.5% 12%;
+        font-size:30px;
+    }
+
+    .subtitulo{
+        padding: 0.5% 12%;
+        font-size:20px;
+    }
+    
+    .corpo{
+        padding: 0.5% 12%;
+        font-size:16px;
+    }
+    li{
+        padding: 0.5% 12%;
+        font-size:16px
+    }
+    .botao-mundo{
+        width: 250px;
+        font-size:16px;
+       
+    }
+
+   
+}
+    @media screen and (min-width: 390px)and (max-width: 844px){
+        
+    /*Menu Responsivo*/
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+    
+    embed{ 
+        width: 100%;
+        height: auto;
+    }
+    .titulo{
+
+        padding: 0.5% 12%;
+        font-size:30px;
+    }
+
+    .subtitulo{
+        padding: 0.5% 12%;
+        font-size:20px;
+    }
+    
+    .corpo{
+        padding: 0.5% 12%;
+        font-size:16px;
+    }
+    li{
+        padding: 0.5% 12%;
+        font-size:16px
+    }
+    .botao-mundo{
+        width: 250px;
+        font-size:16px;
+       
+    }
+
+}
+

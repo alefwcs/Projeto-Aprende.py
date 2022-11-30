@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/operadores logicos.css">
+    <title>Estrutura de Condições</title>
+</head>
+
+    <STYLE>A {text-decoration: none;} </STYLE> <!--Tirar Sublinhado do Link -->
+<style>
+    #All
+    {
+         width: 100%;
+    }
+</style>
+
+
+<!--/////////////////////////////////////////////MENU PADRÃO////////////////////////////////////////////--><!--/////////////////////////////////////////////MENU PADRÃO////////////////////////////////////////////-->
+<body>
+    <div id = 'All'>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h2><a href='/Pagina_Incial'>Aprende.py</a></h2>
+                <img class="logo" src = "../img/logo.png" width="60" height="60" >
+            </div>
+            <div class="nav-list">
+                <ul>
+
+                    <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li> 
+                    <li class="nav-item"><a href="/Planeta_1" class="nav-link">Módulos</a></li>
+                    <li class="nav-item"><a href="/" class="nav-link">Sair</a></li>
+
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <center>
+                <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li> 
+                <li class="nav-item"><a href="/Planeta_1" class="nav-link">Módulos</a></li>
+                <li class="nav-item"><a href="/" class="nav-link">Sair</a></li>
+            </center>
+        </div>
+    </header>
+<!--///////////////////////////////////////////////////MENU PADRÃO ///////////////////////////////////////////-->
+
+
+<div class= 'main'>
+    <div class = 'conteudo'>
+        <div class ='indice'>
+            <label for="toggle-1">
+                <h1 class = 'sum-titulo'>Sumário [Mostrar/Esconder]</h1>
+            </label>
+            <input type="checkbox" id="toggle-1">
+            <div id="mostra">
+                <ul class = "sumario">
+                    <li class="sum-item"><a href="#Titulo1" >ESTRUTURA DE CONDIÇÃO</li>
+                        <li class="sum-item"><a href="#Titulo2" >Condição If/else em Python</li> 
+                        <li class="sum-item"><a href="#Titulo3" >  Condição If </li>
+                        <li class="sum-item"><a href="#Titulo4" > O tipo de dado Booleano (bool)</li>
+                        <li class="sum-item"><a href="#Titulo5" > Conectivos lógicos</li>
+                        <li class="sum-item"><a href="#Titulo6" > Valores lógicos</li>
+                        <li class="sum-item"><a href="#Titulo7" > Conectivos lógicos</li>
+                        <li class="sum-item"><a href="#Titulo8" > Conectivo de conjunção E</li>
+                        <li class="sum-item"><a href="#Titulo9" > Conectivo de disjunção OU </li>
+                        <li class="sum-item"><a href="#Titulo10" > Expressões simples e compostas  </li>
+                </ul>
+            </div>  
+        </div>
+
+
+            <h1 class = 'titulo'><a name="Titulo1"></a> ESTRUTURA DE CONDIÇÃO</h1>
+            <p class = 'corpo'>⠀⠀⠀⠀Estruturas de condição são artifícios das linguagens de programação para determinar qual bloco de código será executado a partir de uma determinada condição. No Python, assim como em outras linguagens, podemos trabalhar com as estruturas de condição utilizando o if/else como veremos abaixo.</p>
+            <br/>
+            <h2 class = 'subtitulo'><a name="Titulo2"></a>If/else em Python</h2>
+            <p class = 'corpo'>⠀⠀⠀⠀Quando programamos, muitas vezes precisamos que determinado bloco de código seja executado apenas se uma determinada condição for verdadeira. Em casos assim, devemos fazer uso de uma estrutura de condição.</p>
+            <br/>
+            <h2 class = 'subtitulo'><a name="Titulo3"></a>If</h2>
+            <p class = 'corpo'>⠀⠀⠀⠀O if é uma estrutura de condição que permite avaliar uma expressão e, de acordo com seu resultado, executar uma determinada ação.
+                No código a seguir temos um exemplo de uso do if no qual verificamos se a variável idade é menor que 20. Em caso positivo, imprimimos uma mensagem na tela e em caso negativo o código seguirá normalmente, desconsiderando a linha 3.
+                </p>
+            <br/>   
+        <center>
+            <img src="../img/if.PNG">
+        </center>
+            <p class = 'corpo'>⠀⠀⠀⠀Como podemos notar, essa estrutura é formada pela palavra reservada if, seguida por uma condição e por dois pontos (:). As linhas abaixo dela formam o bloco de instruções que serão executadas se a condição for atendida. Para isso, elas devem ser identadas corretamente, respeitando a especificação do Python. Nesse código, apenas a instrução da linha 3 é executada, e por isso ela está tabulada. Se fosse necessária a execução de outras linhas no caso da idade ser menor que 20, elas também deveriam estar no mesmo nível de identação da linha 3.</p>
+            <br/>
+            <h2 class = 'subtitulo'><a name="Titulo4"></a>If-else</h2>
+            <p class = 'corpo'>⠀⠀⠀⠀Vimos anteriormente como utilizar o if para executar uma ação caso uma condição seja atendida. No entanto, nenhum comportamento específico foi definido para o caso de a condição não ser satisfeita. Quando isso é necessário, precisamos utilizar a reservada else.</p>
+        <center>
+            <img src="../img/if-else.PNG">
+        </center>
+            <p class="corpo">Dessa vez, caso a condição avaliada na linha 3 não seja atendida, definimos o fluxo alternativo que o código deve seguir. Ou seja, se a idade não for maior ou igual a 18, o bloco abaixo da palavra reservada else deverá ser executado. Nesse caso, temos apenas uma instrução de impressão (linha 5).</p>
+            <br/>
+            <h2 class = 'subtitulo'><a name="Titulo5"></a>If-elif-else</h2>
+            <p class = 'corpo'>⠀⠀⠀⠀Adicionalmente, se existir mais de uma condição alternativa que precisa ser verificada, devemos utilizar o elif para avaliar as expressões intermediárias antes de usar o else, da seguinte forma:</p>
+        <center>
+        <img src="../img/if-elif-else.PNG">
+        </center>
+            <p class = 'corpo'>⠀⠀⠀⠀Na linha 2 definimos a primeira condição (idade < 12). Caso essa não seja atendida, o programa seguirá para a linha 4 e avaliará a próxima condição (elif), que se for verdadeira fará com que o bloco logo abaixo (a linha 5, nesse caso) seja executado. Caso essa condição ainda não seja atendida (elif), há uma outra alternativa na linha 6 que será avaliada e que fará com que o bloco logo abaixo seja executado se ela for atendida. Por fim, se nenhuma das condições for satisfeita, o programa seguirá para a linha 8, executando o que é definido pelo else.</p>
+            
+            <center>
+                <a href = "/Modulo5/Repeticao"><button class = "botao-mundo">Estrutura de Repetição</button></a>
+            </center>
+            
+        <a href="#" class="btn"></a>
+            
+</body>
+</html>

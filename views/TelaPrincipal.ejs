@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/Principal.css'>
+    <title>Aprende.py</title>
+    <script type="text/javascript">
+        window.onload = function () { Clear(); }
+        function Clear() {            
+            var Backlen=history.length;
+            if (Backlen > 0) history.go(-Backlen);
+        }
+   </script>
+</head>
+
+<STYLE>A {text-decoration: none;} </STYLE> <!--Tirar Sublinhado do Link -->
+
+<!--/////////////////////////////////////////////MENU PADRÃO////////////////////////////////////////////-->
+<body >
+    <div id = 'All'>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h2><a href='/Pagina_Incial'>Aprende.py</a></h2>
+                <img class="logo" src = "../img/logo.png" width="60" height="60" >
+            </div>
+            <div class="nav-list">
+                <ul> 
+                    <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li> 
+                    <li class="nav-item"><a href="/Planeta_1" class="nav-link">Módulos</a></li>
+                    <li class="nav-item"><a href="/" class="nav-link">Sair</a></li> <!--Colocar como saída a pagina do inicial-->
+
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <center>
+                <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li> 
+                <li class="nav-item"><a href="/Planeta_1" class="nav-link">Módulos</a></li>
+                <li class="nav-item"><a href="/" class="nav-link">Sair</a></li>
+            </center>
+        </div>
+    </header>
+<!--///////////////////////////////////////////////////MENU PADRÃO ///////////////////////////////////////////-->
+    
+<!--Imagens e Titulo-->
+    
+    <main>
+        <h1>Bem-vindo</h1>
+        <h1 class="user"><%=user.usuario%></h1>
+
+        <div class ='indice'>
+            <label for="toggle-1">
+                <h1 class = 'sum-titulo'>Meus dados</h1>
+              </label>
+              <input type="checkbox" id="toggle-1">
+              <div id="mostra">
+                <ul class = "sumario">
+                    <li class="sum-item">Nome: <%=user.nome%></li>
+                    <li class="sum-item">Usuário: <%=user.usuario%></li> 
+                    <li class="sum-item"> Email: <%=user.email%></li>
+                    <li class="sum-item"> Idade: <%=user.idade%></li>
+                </ul>
+              </div>  
+        </div>
+    
+
+        
+ 
+        <!--   <div class = 'banner'>
+                <center>
+                    <img class = 'banner' src='../img/BannerAprende.png'>
+                </center>
+                
+            </div>
+        --> 
+ 
+        <div class = "row" >
+            <div class="menu">
+
+                    <!--CARD ONE-->
+                    <div class="card">
+                        <CENTER>
+                            <a href="/Mundos">
+                                <img  src="../img/macacomundo.png" width="400" height="400" />
+                            </a>
+                        </CENTER>
+                        <a href="/Mundos"> 
+                            <h2>Mundos</h2>
+                            <p>Assuntos do básico ao avançado da</p>
+                            <p>linguagem Python</p>
+                        </a>
+                    </div>
+                    <!-- FINAL DO CARD One-->
+
+
+                    <!--CARD TWO-->
+                    <div class="card">
+                        <CENTER>
+                            <a href = "/Ranking">
+                                <img src="../img/macacoranking.png" width="400" height="400" />
+                            </a>
+                        </CENTER>
+                        <a href="/Ranking"> 
+                            <h2>Ranking</h2>
+                            <p>Veja como está o seu progresso</p>
+                        </a>
+                    </div>
+                    <!-- FINAL DO CARD TWO-->
+                   
+
+                     <!--CARD THREE-->
+                     <div class="card">
+                        <CENTER>
+                            <a href ="/Exercicios">
+                                <img src="../img/macacoexercicio.png" width="400" height="400" />
+                            </a>
+                        </CENTER>
+                        <a href ="/Exercicios">
+                            <h2>Exercícios Práticos</h2>
+                            <p>Treine alguns códigos  no Python Online</p>
+                        </a>
+                    </div>
+                    <!-- FINAL DO CARD THREE-->
+                
+
+
+            </div>  <!-- Fechar Menu -->
+
+        </div> <!-- Fechar Row -->
+
+    </main>
+
+    <script src="../js/cript tela principal.js"></script>
+
+</body>
+
+</html>

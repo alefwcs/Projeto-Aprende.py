@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
+/* BASE DO FUNDO */
+* {
+    padding: 0;
+    margin: 0;
+    background-color: none;
+    color: white;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#101220; 
+    overflow-x: hidden;
+}
+
+
+/* //////////////////////////////////////////////MENU PADRÃO /////////////////////////////////////////////*/
+
+/*CABEÇARIO*/
+header {
+    background-color: #40254B;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);   
+}
+
+h2{
+    margin: 0 15px;
+    font-family: 'Quicksand', sans-serif; 
+ 
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+a:hover{
+    color: #272262;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+/* //////////////////////////////////////////////final do MENU PADRÃO /////////////////////////////////////////////*/
+
+
+
+
+/*///////////////////////////////////////////// CONTEUDO /////////////////////////////////////////////////*/
+
+main{
+    margin-top: 20px;
+    padding: 60px;
+}
+
+
+h1{ /*Titulo*/
+    
+    text-align: center; 
+    font-family: 'Quicksand', sans-serif;
+    color: #D4F4F9;
+    margin-top: 4px;
+    font-size: 50px;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+.card {
+    border-radius: 5px;
+    padding: 30px;
+    margin: 20px;
+    transition: all 0.3s ease-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    background-color: #827397;
+    cursor: pointer;
+  }
+   
+  .card p {
+    color: #a3a5ae;
+    font-size: 16px;
+  }
+   
+  .image {
+    align-items: center;
+  }
+
+h2{
+    text-align:center;
+    margin-block-end: 20px;
+    font-family: 'Quicksand', sans-serif;
+    
+   
+}
+
+p{
+    margin-top: 5px;
+    text-align: center;
+}
+/*///////////////////////////////////////////// final do CONTEUDO /////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////Responsivo///////////////////////////////////////////////////*/
+
+@media screen and (min-width: 1200px){
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+}
+
+@media screen and (max-width:1200px) {
+    
+    .menu{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+    img{ /*Colunas dos imagens macacos, para modificar e ficar responsivo*/
+        width: 100%;
+    }
+}
+
+

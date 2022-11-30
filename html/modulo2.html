@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style modulo2.css">
+    <title>Módulo 2</title>
+</head>
+
+<STYLE>A {text-decoration: none;} </STYLE> <!--Tirar Sublinhado do Link -->
+
+<!--/////////////////////////////////////////////MENU PADRÃO////////////////////////////////////////////-->
+<body>
+    <div id = 'All'>
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <h2><a href='/Pagina_Incial'>Aprende.py</a></h2>
+                    <img class="logo" src = "../img/logo.png" width="60" height="60" >
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="/Exercicios" class="nav-link">Exercicios Práticos</a></li>
+                        <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li> 
+                        <li class="nav-item"><a href="/Planeta_1" class="nav-link">Módulos</a></li>
+                        <li class="nav-item"><a href="/" class="nav-link">Sair</a></li> <!--Colocar como saída a pagina do inicial-->
+    
+                    </ul>
+                </div>
+    
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <center>
+                    <li class="nav-item"><a href="/Exercicios" class="nav-link">Exercicios Práticos</a></li>
+                    <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li> 
+                    <li class="nav-item"><a href="/Planeta_1" class="nav-link">Módulos</a></li>
+                    <li class="nav-item"><a href="/" class="nav-link">Sair</a></li>
+                </center>
+            </div>
+        </header>
+<!--///////////////////////////////////////////////////MENU PADRÃO ///////////////////////////////////////////-->
+
+<div class= 'main'>
+    <div class = 'conteudo'>
+        <div class ='indice'>
+            <label for="toggle-1">
+                <h1 class = 'sum-titulo'>Sumário [Mostrar/Esconder]</h1>
+              </label>
+              <input type="checkbox" id="toggle-1">
+              <div id="mostra">
+                <ul class = "sumario">
+                    <li class="sum-item"><a href="#Titulo1" > Variáveis</a></li>
+                    <li class="sum-item"><a href="#Titulo2" > Tipos de variáveis Python</a></li> 
+                    <li class="sum-item"><a href="#Titulo3" > Como declarar variáveis no Python?</a></li>
+                    <li class="sum-item"><a href="#Titulo4" > Quiz</a></li>
+                </ul>
+              </div>  
+        </div>
+
+
+        <h1 class = 'titulo'><a name="Titulo1"></a>Variáveis</h1>
+
+
+        
+        <h2 class = 'subtitulo'><a name="Titulo2"></a>O que é uma variável?</h2>
+        <p class = 'corpo'>⠀⠀⠀⠀⠀ Variáveis em Python são lugares reservados na memória de um dispositivo para o armazenamento de dados que posteriormente vão ser usados na execução de uma solução digital.
+            Essas variáveis podem ter formatos e tamanhos diferentes, entre outras particularidades.
+            Podemos pensar que a memória RAM de um dispositivo é como um grande armário, que comporta diversos itens no seu interior, e esse itens são variáveis.
+            Quando você abre um armário, lá podem estar roupas, calçados, livros e objetos decorativos em geral.
+            Apesar de suas diferenças, todos esses itens podem ser armazenados em um único lugar e, na medida em que são retirados do seu espaço, fica uma lacuna que pode ser preenchida por outra variável ou pela mesma.</p>
+        
+            
+
+        <h2 class = 'subtitulo'><a name="Titulo2"></a>Tipos de variáveis Python</h2>
+        <p class = 'corpo'>⠀⠀⠀⠀⠀ Assim como em um armário podem haver diferentes itens (variáveis), a linguagem Python também possui uma variedade importante de tipificação de dados. </p>
+        <p class = 'corpo'>Confira alguns tipos: </p>   
+        <ul class = 'corpo'>
+            <li class="item">Tipo inteiro (int): tipagem composta por algarismos numéricos inteiros;</li>
+            <li class="item">Tipo ponto flutuante ou decimal (float): tipagem composta por algarismos decimais (frações);</li>
+            <li class="item">Tipo complexo (complex): tipagem composta por funções matemáticas;</li>
+            <li class="item">Tipo string (str): tipagem composta por caracteres que formam palavras, frases e textos;</li>
+            <li class="item">Boolean (bool): tipagem composta por lógicas binárias, ou seja, expressões que podem ser classificadas como verdadeiras ou falsas;</li>
+            <li class="item">Listas (list): tipagem que serve para agrupar outros tipos de variáveis, ainda que sejam distintas;</li>
+            <li class="item">Tuplas (tuple): é uma espécie de lista, mas que não permite alterar elementos após a sua criação;</li>
+            <li class="item">Dicionários (dict): tipagem que estabelece uma relação de chave e valor entre dois elementos, onde o primeiro é a chave e o segundo é o valor.</li>
+        </ul>
+        <p class = 'corpo'>PS: Não se preocupe muito com isso agora, mais adiante teremos um módulo apenas para os tipos de dados.</p>
+
+
+
+        <h2 class = 'subtitulo'><a name="Titulo3"></a>Como declarar variáveis no Python?</h2>
+        <p class = 'corpo'>⠀⠀⠀⠀⠀⠀Para declarar as variáveis no Python, é preciso seguir algumas regrinhas, caso contrário, o interpretador não vai reconhecer o comando e uma mensagem de erro aparecerá.
+            Por exemplo, você nunca deve nomear uma variável começando com um número ou símbolo (5 ou %, por exemplo), mas sim com uma letra minúscula ou underline.
+        </p>
+        <p class = 'corpo'>⠀⠀⠀⠀⠀⠀O restante do nome, aí sim, pode ser escrito com os outros tipos de caracteres.
+            Outro cuidado que é preciso ter é não utilizar palavras que já fazem parte dos códigos da linguagem Python para declarar variáveis.
+            É o caso, por exemplo, das palavras “true” e “false”, que estabelecem a relação binária já explicada no tipo (bool).
+        </p>
+
+        <a href="#" class="btn"></a>
+        
+
+        <h2 class = 'subtitulo'><a name="Titulo4"></a>Bora colocar esse conteúdo em prática?</h2>
+
+
+        <center>
+            <a href = "/Modulo2/QuizVariavel"><button class = "botao-mundo">Quiz</button></a>
+        </center>
+        
+
+
+        <script src="../js/script modulo1.js"></script>
+
+
+    </div>
+   
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styleDecisao.css">
+    <title>Exercícios</title>
+</head>
+
+<STYLE>A {text-decoration: none;} </STYLE> <!--Tirar Sublinhado do Link -->
+<style>
+    #All
+    {
+         width: 100%;
+    }
+</style>
+
+<!--/////////////////////////////////////////////MENU PADRÃO////////////////////////////////////////////-->
+<body>
+    <div id = 'All'>
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <h2><a href='/Pagina_Incial'>Aprende.py</a></h2>
+                    <img class="logo" src = "../img/logo.png" width="60" height="60" >
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="/Fontes_Exercicios" class="nav-link">Fontes</a></li>
+                        <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li> 
+                        <li class="nav-item"><a href="/Exercicios" class="nav-link">Exercicios</a></li>
+                        <li class="nav-item"><a href="/" class="nav-link">Sair</a></li>
+                    </ul>
+                </div>
+    
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <center>
+                    <li class="nav-item"><a href="/Fontes_Exercicios" class="nav-link">Fontes</a></li>
+                    <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li> 
+                    <li class="nav-item"><a href="/Exercicios" class="nav-link">Exercicios</a></li>
+                    <li class="nav-item"><a href="/" class="nav-link">Sair</a></li>
+                </center>
+            </div>
+        </header>
+<!--///////////////////////////////////////////////////MENU PADRÃO ///////////////////////////////////////////-->
+
+
+<div class= 'main'>
+    <div class = 'conteudo'>
+        <h1 class = 'titulo'>EXERCÍCIOS SOBRE CLASSES</h1>
+        <div class ='indice'>
+
+            <div class = "row" >
+                <div class="menu">
+
+                <div class="card">
+                        <script src="../js/script exercicio decisao.js"></script>
+                        <ol class = 'sumario'>
+                        <li class="sum-item">Classe Bola: Crie uma classe que modele uma bola:</li>
+                            <ul>
+                                <li class="sum-item">Atributos: Cor, circunferência, material</li>
+                                <li class="sum-item">Métodos: trocaCor e mostraCor</li>
+                            </ul>
+            
+
+                        <li class="sum-item">Classe Quadrado: Crie uma classe que modele um quadrado:</li>
+                                <ul>
+                                    <li class="sum-item">Atributos: Tamanho do lado</li>
+                                    <li class="sum-item">Métodos: Mudar valor do Lado, Retornar valor do Lado e calcular Área</li>
+                                </ul>
+            
+                        <li class="sum-item">Classe Retangulo: Crie uma classe que modele um retangulo:</li>
+                            <ul>
+                                <li class="sum-item">Atributos: LadoA, LadoB (ou Comprimento e Largura, ou Base e Altura, a escolher)</li>
+                                <li class="sum-item">Métodos: Mudar valor dos lados, Retornar valor dos lados, calcular Área e calcular Perímetro;</li>
+                                <li class="sum-item">Crie um programa que utilize esta classe. Ele deve pedir ao usuário que informe as medidades de um local. Depois, deve criar um objeto com as medidas e calcular a quantidade de pisos e de rodapés necessárias para o local.</li>
+                            </ul>
+            
+                        <li class="sum-item">Classe Pessoa: Crie uma classe que modele uma pessoa:</li>
+                                <ul>
+                                    <li class="sum-item">Atributos: nome, idade, peso e altura</li>
+                                    <li class="sum-item">Métodos: Envelhercer, engordar, emagrecer, crescer. Obs: Por padrão, a cada ano que nossa pessoa envelhece, sendo a idade dela menor que 21 anos, ela deve crescer 0,5 cm.</li>
+                                </ul>
+            
+                        <li class="sum-item">Classe Conta Corrente: Crie uma classe para implementar uma conta corrente. A classe deve possuir os seguintes atributos: número da conta, nome do correntista e saldo. Os métodos são os seguintes: alterarNome, depósito e saque; No construtor, saldo é opcional, com valor default zero e os demais atributos são obrigatórios.</li>
+            
+                        <li class="sum-item">Classe TV: Faça um programa que simule um televisor criando-o como um objeto. O usuário deve ser capaz de informar o número do canal e aumentar ou diminuir o volume. Certifique-se de que o número do canal e o nível do volume permanecem dentro de faixas válidas.</li>
+            
+
+                        <li class="sum-item">Classe Bichinho Virtual:Crie uma classe que modele um Tamagushi (Bichinho Eletrônico):</li>
+                                <ul>
+                                    <li class="sum-item">Atributos: Nome, Fome, Saúde e Idade b. Métodos: Alterar Nome, Fome, Saúde e Idade; Retornar Nome, Fome, Saúde e Idade Obs: Existe mais uma informação que devemos levar em consideração, o Humor do nosso tamagushi, este humor é uma combinação entre os atributos Fome e Saúde, ou seja, um campo calculado, então não devemos criar um atributo para armazenar esta informação por que ela pode ser calculada a qualquer momento.</li>
+                                </ul>
+            
+                        <li class="sum-item">Classe Macaco: Desenvolva uma classe Macaco,que possua os atributos nome e bucho (estomago) e pelo menos os métodos comer(), verBucho() e digerir(). Faça um programa ou teste interativamente, criando pelo menos dois macacos, alimentando-os com pelo menos 3 alimentos diferentes e verificando o conteúdo do estomago a cada refeição. Experimente fazer com que um macaco coma o outro. É possível criar um macaco canibal?</li>
+            
+
+                        <li class="sum-item">Classe Ponto e Retangulo: Faça um programa completo utilizando funções e classes que:</li>
+                                <ul>
+                                    <li class="sum-item">Possua uma classe chamada Ponto, com os atributos x e y.</li>
+                                    <li class="sum-item">Possua uma classe chamada Retangulo, com os atributos largura e altura.</li>
+                                    <li class="sum-item">Possua uma função para imprimir os valores da classe Ponto</li>
+                                    <li class="sum-item">Possua uma função para encontrar o centro de um Retângulo.</li>
+                                    <li class="sum-item">Você deve criar alguns objetos da classe Retangulo.</li>
+                                    <li class="sum-item">Cada objeto deve ter um vértice de partida, por exemplo, o vértice inferior esquerdo do retângulo, que deve ser um objeto da classe Ponto.</li>
+                                    <li class="sum-item">A função para encontrar o centro do retângulo deve retornar o valor para um objeto do tipo ponto que indique os valores de x e y para o centro do objeto.</li>
+                                    <li class="sum-item">O valor do centro do objeto deve ser mostrado na tela</li>
+                                    <li class="sum-item">Crie um menu para alterar os valores do retângulo e imprimir o centro deste retângulo.</li>
+                                </ul>
+            
+
+                        <li class="sum-item">Classe Bomba de Combustível: Faça um programa completo utilizando classes e métodos que:</li>
+                                <ul>
+                                    <li class="sum-item">Possua uma classe chamada bombaCombustível, com no mínimo esses atributos:</li>
+                                    <ul>
+                                        <li class="sum-item">tipoCombustivel.</li>
+                                        <li class="sum-item">valorLitro</li>
+                                        <li class="sum-item">quantidadeCombustivel</li>
+                                    </ul>
+                        
+
+                                    <li class="sum-item">Possua no mínimo esses métodos:</li>
+                                    <ul>
+                                        <li class="sum-item">abastecerPorValor( ) – método onde é informado o valor a ser abastecido e mostra a quantidade de litros que foi colocada no veículo</li>
+                                        <li class="sum-item">abastecerPorLitro( ) – método onde é informado a quantidade em litros de combustível e mostra o valor a ser pago pelo cliente.</li>
+                                        <li class="sum-item">alterarValor( ) – altera o valor do litro do combustível.</li>
+                                        <li class="sum-item">alterarCombustivel( ) – altera o tipo do combustível.</li>
+                                        <li class="sum-item">alterarQuantidadeCombustivel( ) – altera a quantidade de combustível restante na bomba.</li>
+                                    </ul>
+                                    <p>OBS: Sempre que acontecer um abastecimento é necessário atualizar a quantidade de combustível total na bomba.</p>
+                                </ul>
+                            </div>
+                            <div class="card"> 
+                                <center>
+                                    <iframe frameborder="0" width="90%" height="500px" src="https://www.programiz.com/python-programming/online-compiler/" ></iframe>
+                                </center>
+                            </div>
+                   
+                            </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

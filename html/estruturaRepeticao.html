@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/operadores logicos.css">
+    <title>Estrutura de Repetição</title>
+</head>
+<STYLE>A {text-decoration: none;} </STYLE> <!--Tirar Sublinhado do Link -->
+<style>
+    #All
+    {
+         width: 100%;
+    }
+</style>
+
+
+<!--/////////////////////////////////////////////MENU PADRÃO////////////////////////////////////////////--><!--/////////////////////////////////////////////MENU PADRÃO////////////////////////////////////////////-->
+<body>
+    <div id = 'All'>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h2><a href='/Pagina_Incial'>Aprende.py</a></h2>
+                <img class="logo" src = "../img/logo.png" width="60" height="60" >
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li> 
+                    <li class="nav-item"><a href="/Planeta_1" class="nav-link">Módulos</a></li>
+                    <li class="nav-item"><a href="/" class="nav-link">Sair</a></li>
+
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <center
+                <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li> 
+                <li class="nav-item"><a href="/Planeta_1" class="nav-link">Módulos</a></li>
+                <li class="nav-item"><a href="/" class="nav-link">Sair</a></li>
+            </center>
+        </div>
+    </header>
+<!--///////////////////////////////////////////////////MENU PADRÃO ///////////////////////////////////////////-->
+
+
+<div class= 'main'>
+    <div class = 'conteudo'>
+        <div class ='indice'>
+            <label for="toggle-1">
+                <h1 class = 'sum-titulo'>Sumário [Mostrar/Esconder]</h1>
+            </label>
+            <input type="checkbox" id="toggle-1">
+            <div id="mostra">
+                <ul class = "sumario">
+                    <li class="sum-item"><a href="#Titulo1" >ESTRUTURA DE REPETIÇÃO</li>
+                        <li class="sum-item"><a href="#Titulo2" >O que é estrutura de repetição em Python?</li> 
+                        <li class="sum-item"><a href="#Titulo3" >  Como funciona a estrutura de repetição? </li>
+                        <li class="sum-item"><a href="#Titulo4" > Condição While </li>
+                        <li class="sum-item"><a href="#Titulo5" > Loop Infinito</li>
+                        <li class="sum-item"><a href="#Titulo6" > Condição For</li>
+                </ul>
+            </div>  
+        </div>
+
+
+
+    <h1 class = 'titulo'><a name="Titulo1"></a>ESTRUTURA DE REPETIÇÃO</h1>
+    <h2 class = 'subtitulo'><a name="Titulo2"></a>O que é estrutura de repetição em Python?</h2>
+
+   <p class = 'corpo'>⠀⠀⠀⠀⠀Uma estrutura de repetição em Python é um recurso para desenvolver tarefas repetitivas em um loop contínuo. O loop funciona até uma condição ser satisfeita.
+        É importante configurar devidamente essa condição para não cair em erros fatais em um programa. 
+        O loop faz o que chamamos em programação de iteração, uma repetição que analisa alguma estrutura.
+        Pense, por exemplo, em um parágrafo com 40 palavras. Em um dado projeto, é necessário percorrer cada letra para fazer uma verificação. Se você não puder contar com uma estrutura de repetição, terá que fazer isso do jeito mais difícil e braçal.
+        A forma mais lógica é percorrer cada item de forma separada, depois de transformar o parágrafo em uma lista. Assim, você faz um IF para cada item e verifica todos até terminar a lista.
+        Com essa operação, você perde muito tempo de codificação e muitas linhas de código em um processo difícil de ler e de manter. 
+        Com uma estrutura de repetição no Python, por outro lado, tudo se torna mais simples e intuitivo.
+        É só estabelecer uma condição de percorrer a lista até que ela termine e então fazer um único bloco IF para verificar o que precisa em todas as letras daquele parágrafo.
+        O trabalho de centenas de linhas se torna apenas umas 5. Tudo mais fácil de ler e de alterar depois. 
+        </P>
+    <h2 class = 'subtitulo'><a name="Titulo3"></a>Como funciona a estrutura de repetição?</h2>
+   <p class = 'corpo'>⠀⠀⠀⠀⠀A estrutura de repetição em Python funciona como um bloco de código ideal para executar uma única operação em todos os dados. 
+        Contudo, se você precisa alterar o código a depender da informação lida, você pode estabelecer subcondições (com diferentes IFs) para verificações específicas. 
+        Caso você precise de um tratamento muito específico em cada item, o loop pode se tornar complexo demais. 
+        Já em situações em que você precisa identificar qual é o dado antes de fazer uma comparação, o loop pode não ser a opção ideal.
+        Afinal, o bloco de repetição já sabe qual é a condição ideal para testar antes mesmo de conhecer cada elemento. 
+        Vamos agora para a utilização da estrutura de repetição while.</p>
+
+    <h3 class = 'subtitulo'><a name="Titulo4"></a>While</h3>
+<center>
+    <img src="../img/while.png">
+</center>
+   <p class = 'corpo'>⠀⠀⠀⠀⠀Estrutura de Repetição WHILE
+        Aqui já vamos utilizar a função input (para inserir uma informação no Python) para que o código solicite uma informação ao usuário e armazene na variável nome, ou seja, vamos ter uma interação com o usuário.
+        Em seguida iniciamos com a estrutura while utilizando a variável nome, onde se ela for verdadeira (diferente de vazio) o código vai seguir perguntando o nome até que pare de escrever.
+        Quando parar de escrever o código vai parar de rodar, no entanto, é MUITO IMPORTANTE tomar cuidado com a estrutura while, pois ela, diferente do for, não tem um fim definido.
+        Isso quer dizer que você pode entrar em um loop infinito dependendo da maneira que escreve essa estrutura.</p>
+    
+   <h3 class = 'subtitulo'><a name="Titulo5"></a>Loop Infinito</h3>
+<center>
+    <img src="../img/loop.png">
+</center>
+   <p class = 'corpo'>⠀⠀⠀⠀⠀Nesse caso veja que dentro da estrutura while nós temos apenas o input, mas ele não está atribuindo a informação a uma variável, ou seja, o nome que temos é o mesmo que colocamos lá atrás.
+        Então se não estamos mudando esse nome, mesmo não escrevendo nada, porque não temos o input colocando o resultado na variável o programa não vai parar.
+        Por isso é muito importante tomar cuidado com a estrutura while porque se não colocar um fim determinado vai ficar nessa estrutura para sempre.
+        E dependendo da ação que estiver fazendo pode ser que o seu código venha a travar e parar sua aplicação.
+        </p>
+   <h3 class = 'subtitulo'><a name="Titulo6"></a>For</h3>
+    <center>
+    <img src="../img/for.png">
+    </center>
+   <p class = 'corpo'>⠀⠀⠀⠀⠀Neste caso temos 3 exemplos em que temos a repetição utilizando o For. Ela começa com o for, em seguida temos uma variável para indicar o que vamos analisar.
+        OBS: Pode ser uma variável qualquer, mas como no primeiro exemplo, nós colocamos uma variável com um nome fácil de identificar para que você não se perca daqui a alguns meses quando for rever o código.
+        No primeiro exemplo nós estamos utilizando uma variável lojas, que é uma lista. Caso tenha interesse em saber mais sobre listas no Python basta clicar aqui!
+        A função print no Python é simplesmente para que o usuário possa ver na tela o resultado, então isso facilita para verificar se o que está fazendo está correto antes de partir para a próxima etapa.
+        </p>
+    <br/>
+    
+    <center><h2><a href = "/Quiz">Bora testar seu conhecimento!</h2></a></center>
+    <a href="#" class="btn"></a>
+
+</body>
+</html>

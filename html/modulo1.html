@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style modulo1.css">
+    <title>Módulo 1</title>
+</head>
+
+<STYLE>A {text-decoration: none;} </STYLE> <!--Tirar Sublinhado do Link -->
+<style>
+    #All
+    {
+         width: 100%;
+    }
+</style>
+
+<!--/////////////////////////////////////////////MENU PADRÃO////////////////////////////////////////////-->
+<body>
+    <div id = 'All'>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h2><a href='/Pagina_Incial'>Aprende.py</a></h2>
+                <img class="logo" src = "../img/logo.png" width="60" height="60" >
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="/Exercicios" class="nav-link">Exercicios Práticos</a></li>
+                    <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li> 
+                    <li class="nav-item"><a href="/Planeta_1" class="nav-link">Módulos</a></li>
+                    <li class="nav-item"><a href="/" class="nav-link">Sair</a></li> <!--Colocar como saída a pagina do inicial-->
+
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <center>
+                <li class="nav-item"><a href="/Exercicios" class="nav-link">Exercicios Práticos</a></li>
+                <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li> 
+                <li class="nav-item"><a href="/Planeta_1" class="nav-link">Módulos</a></li>
+                <li class="nav-item"><a href="/" class="nav-link">Sair</a></li>
+            </center>
+        </div>
+    </header>
+<!--///////////////////////////////////////////////////MENU PADRÃO ///////////////////////////////////////////-->
+
+<div class= 'main'>
+    <div class = 'conteudo'>
+        <div class ='indice'>
+            <label for="toggle-1">
+                <h1 class = 'sum-titulo'>Sumário [Mostrar/Esconder]</h1>
+              </label>
+              <input type="checkbox" id="toggle-1">
+              <div id="mostra">
+                <ul class = "sumario">
+                    <li class="sum-item"><a href="#Introducao" > Introdução</a></li>
+                    <li class="sum-item"><a href="#Titulo2" > O que é Python?</a></li> 
+                    <li class="sum-item"><a href="#Titulo3" > Como surgiu a linguagem Python?</a></li>
+                    <li class="sum-item"><a href="#Titulo4" > Python no mundo real</a></li>
+                    <li class="sum-item"><a href="#Titulo5" > Jogos e sites que utilizam Python </a></li>
+                    <li class="sum-item"><a href="#Titulo6" > Instalando Python </a></li>
+                    <li class="sum-item"><a href="#Titulo7" > Tour pela linguagem </a></li>
+                    <li class="sum-item"><a href="#Titulo8" > Primeiras linhas de comando </a></li>
+                </ul>
+              </div>  
+        </div>
+       
+
+  
+
+        <h1 class = 'titulo'><a name="Introducao"></a>Introdução</h1></div>
+      
+
+
+        <h2 class = 'subtitulo'><a name="Titulo2"></a> O que é Python?</h2>
+        <p class = 'corpo'> Python é uma linguagem de programação de alto nível — ou High Level Language —, dinâmica, interpretada, modular, multiplataforma e orientada a objetos — uma forma específica de organizar softwares onde, a grosso modo, os procedimentos estão submetidos às classes, o que possibilita maior controle e estabilidade de códigos para projetos de grandes proporções. Por ser uma linguagem de sintaxe relativamente simples e de fácil compreensão, ganhou popularidade entre profissionais da indústria tecnológica que não são especificamente programadores, como engenheiros, matemáticos, cientistas de dados, pesquisadores e outros.</p>
+        <p class = 'corpo'> Um de seus maiores atrativos é possuir um grande número de bibliotecas, nativas e de terceiros, tornando-a muito difundida e útil em uma grande variedade de setores dentro de desenvolvimento web, e também em áreas como análise de dados, machine learning e IA.</p>
+        
+
+
+        <h2 class = 'subtitulo'><a name="Titulo3"></a>Como surgiu a linguagem Python?</h2>
+        <p  class = 'corpo'> Idealizada e desenvolvida por Guido Van Rossum, matemático holandês, no início dos anos 90, o Python foi criado com o objetivo de otimizar a leitura de códigos e estimular a produtividade de quem os cria, seja este um programador ou qualquer outro profissional. 
+            A ideia surgiu, como quase todas as boas ideias, de uma necessidade: a de economizar tempo no desenvolvimento e melhorar a eficiência em um projeto desenvolvido no instituto onde Guido era pesquisador.</p>
+        <p  class = 'corpo'>Para que esta melhoria pudesse ser feita de forma mais rápida e eficaz, Guido desenvolveu uma linguagem muito descomplicada e flexível: o Python.
+            Uma vez que esta linguagem passou a possibilitar a criação desde scripts muito simples até sistemas extremamente poderosos, profissionais de várias áreas começaram a progressivamente utilizá-la cada vez mais.</p>
+        <p  class = 'corpo'> Hoje, além dos desenvolvedores de software, temos biólogos, contadores, físicos e outros profissionais potencializando suas habilidades através dela.
+            Estes são alguns motivos que tem feito o uso do Python crescer consideravelmente nos últimos anos em detrimento de outras linguagens.
+        </p>
+        <center>
+            <embed class ='video' width="420" height="320" src="https://www.youtube.com/embed/PKykKhbawqo"></embed>
+            <embed class ='video' width="420" height="320" src ="https://www.youtube.com/embed/Mp0vhMDI7fA"></embed>
+        </center>
+
+
+        <h2 class = 'subtitulo'><a name="Titulo4"></a>Python no mundo real</h2>
+        <p  class = 'corpo'>Empresas que utilizam Python
+        Como Python é tão versátil, é evidente que grandes empresas e corporações já utilizam a linguagem em diversas aplicações. Alguns exemplos são: </p>
+        <ul  class = 'corpo'>
+            <li class="item">Instagram (utiliza Django como backend, um framework Python para a web)</li>
+            <li class="item">Google (grande parte do algoritmo de busca é escrito em Python)</li>
+            <li class="item">Spotify (o aplicativo é construído em Python)</li>
+            <li class="item">Netflix (utiliza muitas bibliotecas Python)</li>
+            <li class="item">Uber (boa parte do aplicativo é feita com Python)</li>
+            <li class="item">Dropobox (contratou o criador da linguagem Python, Guido van Rossum)</li>
+            <li class="item">Pinterest (utiliza Python e Django)</li>
+            <li class="item">Reddit (utiliza bibliotecas Python)</li>
+        </ul>
+
+        <h2 class = 'subtitulo'><a name="Titulo5"></a>Jogos e sites que utilizam Python</h2>
+        <ul class = 'corpo'>
+            <li class="item">Empresas que utilizam</li>
+            <li class="item">Jogos e sites</li>
+            <li class="item"> <a href = "https://www.devmedia.com.br/python-no-mundo-real/40244" target="_blank">Python no mundo real</a></li>
+        </ul>
+
+
+
+        <h2 class = 'subtitulo'><a name="Titulo6"></a>Instalando Python</h2>
+        <center>
+            <embed  lass ='video' width="720" height="420"; src = "https://www.youtube.com/embed/VuKvR1J2LQE"></embed>
+        </center>
+        <ul class = 'corpo'>
+            <li class="item"><a  href = "https://www.devmedia.com.br/primeiros-passos-com-o-python/37003" target="_blank">Primeiros passos com o Python</a></li>
+            <li class="item"><a  href = "https://www.devmedia.com.br/instalacao-do-python/40643" target="_blank">Instalação do Python</a></li>
+        </ul>
+
+
+
+        <h2 class = 'subtitulo'><a name="Titulo7"></a>Tour pela linguagem</h2>
+        <p class = 'corpo'>⠀⠀⠀⠀⠀A sintaxe de uma linguagem são as regras que nos dizem como escrever um código para que ele seja compilado sem erros. A seguir, veremos algumas dentre as principais características da sintaxe do Python, com exemplos de código e explicações. Uma vez que o Python é uma linguagem fácil de aprender, é possível que ao final desse artigo você já possa escrever os seus primeiros códigos com a mesma.</p>
+        <h3 class = 'subtitulo' >Palavras-chave</h3>
+        <p class = 'corpo'>⠀⠀⠀⠀⠀Python, como toda linguagem, possui um conjunto de palavras-chave, que são termos que possuem significado especial para o compilador e que não podem utilizados como nomes. Abaixo temos uma lista destes termos:</p>
+        <p class = 'corpo'>and, as, assert, break, class, continue, def, del, elif, else, except, False, finally,
+            for, from, global, if, import, in, is, lambda, None, nonlocal, not, or, pass, raise,
+            return, True, try, while, with, yield</p>
+        <p class = 'corpo'>Não se preocupe em decorar cada palavra-chave da linguagem agora. A maioria das IDEs com as quais você vai trabalhar te avisará quando você estiver utilizando alguma dessas palavras como nome de uma variável.</p>
+        <br/>
+        <h3 class = 'subtitulo'>Não é necessário usar ponto vírgula no fim de um comando</h3>
+        <p class = 'corpo'>Em boa parte das linguagens de programação as linhas de código devem terminar com um ponto e vírgula (;). No Python isso é opcional. Um caso onde o ponto e vírgula seria necessário é quando temos mais de um comando em uma mesma linha.</p>
+        <br/>
+        <h3 class = 'subtitulo'>Indentação faz parte da sintaxe</h3>
+        <p class = 'corpo' >Indentação é uma forma de arrumar o código, fazendo com que algumas linhas fiquem mais à direita que outras, à medida que adicionamos espaços em seu início. Para a maioria das linguagens a indentação não é obrigatória, mas no caso Python isso é diferente.
+            A indentação é uma característica importante no Python, pois além de promover a legibilidade é essencial para o bom funcionamento do código. Em outras palavras, se a indentação não estiver adequada o programa pode se comportar de forma inesperada ou até mesmo não compilar.</p>
+        <br/>
+
+
+
+        <h2 class = 'subtitulo'><a name="Titulo8"></a>Primeiras linhas de comando</h2>
+        <p class = 'corpo'><a  href = "https://www.devmedia.com.br/python-tutorial-tour-pela-linguagem/40646">Python tutorial: Tour pela linguagem</a></p>
+        <center>
+            <embed width =720  height= 450 src = "https://www.youtube.com/embed/31llNGKWDdo"></embed>
+        </center>
+
+        <h3 class = 'subtitulo'><a href="/Modulo2">Partiu, módulo 2!</a></h3>
+        
+        <a href="#" class="btn"></a>
+        
+        
+
+        <script src="../js/script modulo1.js"></script>
+
+
+    </div>
+    
+
+</div>
+</div>
+
+</body>
+</html>

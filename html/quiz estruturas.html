@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Aprende.py</title>
+    <link rel="stylesheet" href="../css/quiz.css">
+    <!-- link para os icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="../js/questoes estruturas.js" defer></script>
+</head>
+<body>
+   
+    <!-- botão de começar -->
+    <div class="start_btn"><button>Iniciar Revisão</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>As regras da revisão para uma experiência completa</span></div>
+        <div class="info-list">
+            <div class="info">1. Você vai ter apenas <span>15 segundos</span> para cada questão.</div>
+            <div class="info">2. Assim que você selecionar a resposta, não poderá mudar.</div>
+            <div class="info">3. Você não vai poder escolher nenhuma opção assim que o tempo acabar.</div>
+            <div class="info">4. Você não pode sair da revisão enquanto estiver jogando.</div>
+            <div class="info">5. Você ganhará pontos conforme acertar as respostas.</div>
+        </div>
+        <div class="buttons">
+            <a href="/Modulo4"><button class="quit">Sair da revisão</button></a>
+            <button class="restart">Continuar</button>
+        </div>
+    </div>
+
+    <!-- caixa de revisão -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Aprende.py</div>
+            <div class="timer">
+                <div class="time_left_txt">Tempo restante</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- aqui as perguntas do arquivo javacript são chamadas -->
+            </div>
+            <div class="option_list">
+                <!-- aqui as opções do arquivo javacript são chamadas -->
+            </div>
+        </section>
+
+        <!-- rodapé da caixa de perguntas -->
+        <footer>
+            <div class="total_que">
+                <!-- os numeros de cada questão são inseridos aqui -->
+            </div>
+            <button class="next_btn">Próxima Questão</button>
+        </footer>
+    </div>
+
+    <!-- Caixa de resultado -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Você completou a revisão!</div>
+        <div class="score_text">
+            <!-- aqui são inseridos os pontos do javascript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Refazer</button>
+            <a href="/Modulo4"><button class="quit">Sair da revisão</button></a>
+        </div>
+    </div>
+
+    <!-- Dentro desse arquivo do java se encontram apenas as questoes e as opções -->
+    <script src="../js/questoes estruturas.js"></script>
+
+    <!-- Dentro desse arquivo do java se encontram todo o codigo para o quiz funcionar (pontos, tempo, TUDO) -->
+    <script src="../js/script quiz estruturas.js"></script>
+
+</body>
+</html>
+</html>

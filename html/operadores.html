@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/operadores logicos.css">
+    <title>Operadores</title>
+</head>
+<STYLE>A {text-decoration: none;} </STYLE> <!--Tirar Sublinhado do Link -->
+
+<body>
+    <header>
+        <nav class="nav-bar"> 
+            <div class="logo">
+                <h2><a href='/Pagina_Incial'>Aprende.py</a></h2>
+                <img class="logo" src = "../img/logo.png" width="60" height="60" >
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li>
+                    <li class="nav-item"><a href="/Planeta_1" class="nav-link">Módulos</a></li>
+                    <li class="nav-item"><a href="/Modulo3" class="nav-link">Operações</a></li>
+                    <li class="nav-item"><a href="/Fontes_Mundo1" class="nav-link">Fontes</a></li>
+                    <li class="nav-item"><a href="/" class="nav-link">Sair</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li>
+                <li class="nav-item"><a href="/Planeta_1" class="nav-link">Módulos</a></li>
+                <li class="nav-item"><a href="/Modulo3" class="nav-link">Operações</a></li>
+                <li class="nav-item"><a href="/Fontes_Mundo1" class="nav-link">Fontes</a></li>
+                <li class="nav-item"><a href="/" class="nav-link">Sair</a></li>
+            </ul>
+        </div>
+    </header>
+   
+    <div class= 'main'>
+        <div class = 'conteudo'>
+            <div class ='indice'>
+                <label for="toggle-1">
+                    <h1 class = 'sum-titulo'>Sumário [Mostrar/Esconder]</h1>
+                </label>
+                <input type="checkbox" id="toggle-1">
+                <div id="mostra">
+                    <ul class = "sumario">
+                        <li class="sum-item"><a href="/Minha_ContaTitulo1" >Operadores Matemáticos</li>
+                        
+                    </ul>
+                </div>  
+            </div>
+
+
+                
+                <h1 class = 'titulo'><a name="Titulo1"></a>Operadores Matemáticos</h1>
+                <p class = 'corpo'>⠀⠀⠀⠀⠀⠀⠀⠀⠀O Python pode ser utilizado como uma calculadora matemática avançada. Praticamente, todos os operadores aritméticos funcionam da mesma forma como os conhecemos da matemática elementar. Por exemplo, para trabalharmos com as 4 principais funções matemáticas, a soma, subtração, multiplicação e divisão, temos os operadores conforme tabela a seguir.</p>
+
+                <center><table border="1" align="center"  height="100" width="50%">
+                    <tr>
+                        <td>Operação</td>
+                        <td>Operador</td>
+                    </tr>
+                    <tr>
+                        <td>Adição</td>
+                        <td>+</td>
+                    </tr>
+                    <tr>
+                        <td>Subtração</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Multiplicação</td>
+                        <td>*</td>
+                    </tr>
+                    <tr>
+                        <td>Divisão</td>
+                        <td>/</td>
+                    </tr>
+                </table>
+            </center>
+
+                <p class = 'corpo'>⠀⠀⠀⠀⠀⠀⠀⠀⠀Tempos também, operadores para exponenciação, obtenção da parte inteira de uma divisão, extração do módulo da divisão, conforme pode ser visto na tabela a seguir:</p>
+
+            <center><table border="1" align="center"  height="100" width="50%">
+                    <tr>
+                        <td>Operação</td>
+                        <td>Operador</td>
+                    </tr>
+                    <tr>
+                        <td>Exponenciação</td>
+                        <td>**</td>
+                    </tr>
+                    <tr>
+                        <td>Parte inteira</td>
+                        <td>//</td>
+                    </tr>
+                    <tr>
+                        <td>Módulo</td>
+                        <td>%</td>
+                    </tr>
+
+                </table></center>
+
+                <p class = 'corpo'>⠀⠀⠀⠀⠀⠀⠀⠀⠀Podemos elevar um número a outro através da utilização de 2 sinais de multiplicação seguidos *, isto é, o operador * é o operador para exponenciação em Python. Também é possível obter a parte inteira da divisão, com o uso do sinal de divisão repetido, //.</p>
+                <p class = 'corpo'>⠀⠀⠀⠀⠀⠀⠀⠀⠀A seguir, temos algumas operações matemáticas utilizando os operadores que acabamos de estudar e seus respectivos resultados:</p>
+                <center>
+                    <img src="../img/aaaaaaa.PNG">
+                </center>
+                <p class = 'corpo'>⠀⠀⠀⠀⠀⠀⠀⠀⠀Acabamos de utilizar 6 operadores matemáticas que estão definidos por padrão. Ainda que não tenha muita utilidade num primeiro momento, podemos alterar o funcionamento dos operadores, ou seja, podemos fazer com que o sinal de adição funcione da maneira como bem desejarmos.</p>
+                <p class = 'corpo'>⠀⠀⠀⠀⠀⠀⠀⠀⠀Essa funcionalidade não possui utilidade quando estamos tratando de números inteiros, porém, é bastante útil, quando por exemplo, temos uma estrutura que seria interessante poder ser somada com outra. Logo, implementamos na classe dessa estrutura a funcionalidade de soma, subtração e etc.</p>
+                
+                <center>
+                    <a href = "/Modulo3/Operadores_relacionais"><button class = "botao-mundo">Operadores relacionais</button></a>
+                </center>
+                
+                <a href="/Minha_Conta" class="btn"></a>
+                <script src="../js/operadores logicos.js" defer ></script>
+
+</body>
+</html>

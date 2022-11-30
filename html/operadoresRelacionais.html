@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Operadores logicos.css">
+    <title>Operadores relacionais</title>
+</head>
+<STYLE>A {text-decoration: none;} </STYLE> <!--Tirar Sublinhado do Link -->
+
+
+<body>
+    <header>
+        <nav class="nav-bar"> 
+            <div class="logo">
+                <h2><a href='/Pagina_Incial'>Aprende.py</a></h2>
+                <img class="logo" src = "../img/logo.png" width="60" height="60" >
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li>
+                    <li class="nav-item"><a href="/Planeta_1" class="nav-link">Módulos</a></li>
+                    <li class="nav-item"><a href="/Modulo3" class="nav-link">Operações</a></li>
+                    <li class="nav-item"><a href="/Fontes_Mundo1" class="nav-link">Fontes</a></li>
+                    <li class="nav-item"><a href="/" class="nav-link">Sair</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li>
+                <li class="nav-item"><a href="/Planeta_1" class="nav-link">Módulos</a></li>
+                <li class="nav-item"><a href="/Modulo3" class="nav-link">Operações</a></li>
+                <li class="nav-item"><a href="/Fontes_Mundo1" class="nav-link">Fontes</a></li>
+                <li class="nav-item"><a href="/" class="nav-link">Sair</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class= 'main'>
+        <div class = 'conteudo'>
+            <div class ='indice'>
+                <label for="toggle-1">
+                    <h1 class = 'sum-titulo'>Sumário [Mostrar/Esconder]</h1>
+                </label>
+                <input type="checkbox" id="toggle-1">
+                <div id="mostra">
+                    <ul class = "sumario">
+                        <li class="sum-item"><a href="/Minha_ContaTitulo1" >Operadores relacionais e Operadores compativos</li>
+                        <li class="sum-item"><a href="/Minha_ContaTitulo2" >Tabela dos Operadores relacionais</li> 
+                        <li class="sum-item"><a href="/Minha_ContaTitulo3" > Operadores relacionais simples</li>    
+                           
+                            
+                    </ul>
+                </div>  
+            </div>
+
+
+    <h1 class = 'titulo'><a name="Titulo1"></a>Operadores relacionais e <br> Operadores compativos</h1 >
+    <p class = 'corpo'>⠀⠀⠀⠀⠀⠀⠀⠀⠀Operador Relacional é todo operador que obtém a relação do membro a esquerda com o membro a sua direita.
+
+        É comum na programação A necessidade de conhecer a relação entre diversos operandos para que então, o nosso programa assuma determinada característica, ou invoque alguma funcionalidade. A linguagem Python trabalha com os Operadores relacionais, também chamados de Operadores compativos, da mesma forma que a maioria das outras linguagens, tais como C, C++, Java, C/Minha_Conta e etc.</p>
+ 
+    <h1 class = 'titulo'><a name="Titulo2"></a>Tabela dos <br> Operadores relacionais</h1 >
+    <p class = 'corpo'>Na tabela abaixo, temos os Operadores relacionais disponibilizados pelo Python. Na continuação deste artigo, estudaremos cada operador isoladamente.</p>
+    
+        <center><table border="1" align="center"  height="100" width="50%">
+                <tr>
+                    <td>Descrição</td>
+                    <td>Operador</td>
+                </tr>
+                <tr>
+                    <td>Maior que</td>
+                    <td>></td>
+                </tr>
+                <tr>
+                    <td>Menor que</td>
+                    <td><</td>
+                </tr>
+                <tr>
+                    <td>Igual a</td>
+                    <td>==</td>
+                </tr>
+                <tr>
+                    <td>Maior ou igual a</td>
+                    <td>>=</td>
+                </tr>
+                <tr>
+                    <td>Menor ou igual a</td>
+                    <td><=</td>
+                </tr>
+            </table>
+        </center>
+
+    <h1 class = 'titulo'><a name="Titulo3"></a>Operadores <br> relacionais simples</h1 >
+    <p class = 'corpo'>Existem 3 relações possíveis entre 2 operandos, são elas:</p>
+        <center><table border="1" align="center"  height="100" width="50%">
+            <tr>
+                <td>Descrição</td>
+                <td>Operador</td>
+            </tr>
+            <tr>
+                <td>Maior que</td>
+                <td>></td>
+            </tr>
+            <tr>
+                <td>Menor que</td>
+                <td><</td>
+            </tr>
+            <tr>
+                <td>Igual a</td>
+                <td>==</td>
+            </tr>
+        </table></center>
+
+ 
+    <p class = 'corpo'>Para obtermos a relação entre 2 membros, temos que ultilizar a seguinte estrutura: </p>
+    <center>
+        <img src="../img/Capturar.PNG">
+    </center>
+    <p class = 'corpo'>É importante observar que a inversão dos membros ocasiona na inversão do resultado da expressão, isto é, se o membro que estiver a esquerda for para a direita e vice-e-versa, a relação entre eles será o contrário.</p>
+ 
+
+    <center>
+        <img src="../img/Capturar2.PNG">
+    </center>
+    <p class = 'corpo'>No código acima, realizamos algumas operações entre números e caracteres, sempre utilizando as 3 comparações simples. Temos que, ou o operador a esquerda será maior, ou menor, ou então, igual ao operador a sua direita.</p>
+
+
+
+    <center>
+        <a href = "/Modulo3/Quiz"><button class = "botao-mundo">Quiz</button></a>
+    </center>
+    
+    <a href="" class="btn"></a>
+
+    <script src="../js/Operadores logicos.js"></script>
+</div>
+
+</body>
+</html>

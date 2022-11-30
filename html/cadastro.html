@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <!-- <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Aprende.py</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/Cadastro.css'>
+    <script src='../js/Cadastro.js' defer></script>
+</head>
+<body>
+    <!--Esse div container faz com que a caixa de login exista.
+    Os divs de seguintes abrem as caixinhas de cada informação que entrará no input.
+    A parte do javascript (script) é onde a função de ver a senha digitada e voltar ela para as bolinhas ocorre. 
+    Botão entrar e o direncionamento para o cadastro.-->
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h2>Aprende.py</h2>
+                <img class="logo" src = "../img/logo.png" width="60" height="60" >
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="/" class="nav-link">Início</a></li>
+                </ul>
+            </div>
+            <!--<div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>-->
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="/" class="nav-link">Início</a></li>
+            </ul>
+
+            <!--<div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>-->
+        </div>
+    </header>
+    <form action="/Cadastro" method="post">
+        <div class='container'>
+
+            <div class ='card'>
+                <h1> Cadastre-se </h1>
+    
+                <div id='msgError'></div>
+                <div id='msgSucess'></div>
+    
+    
+                <div class='label-float'>
+                    <input type='text' id='nome' placeholder='' name="nome" required>
+                    <label id="labelNome" for='nome'>Nome</label>
+                </div>
+    
+    
+                <div class='label-float'>
+                    <input type='text' id='usuario' placeholder='' name="usuario" required>
+                    <label id="labelUsuario" for='usuario'>Usuário</label>
+                </div>
+    
+                <div class='label-float'>
+                    <input type='mail' id='email' placeholder='' name="email" required>
+                    <label id="labelEmail" for='email'>Email</label>
+                </div>
+    
+                <div class='label-float'>
+                    <input type='text' id='idade' placeholder='' name="idade" required>
+                    <label id="labelIdade" for='idade'>Idade</label>
+                </div>
+    
+                <div class='label-float'>
+                    <input type='password' id='senha' placeholder='' name="senha" required>
+                    <label id="labelSenha" for='senha'>Senha</label>
+                    <i id='verSenha' class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+    
+                <div class='label-float'>
+                    <input type='password' id='confirmSenha' placeholder=''required>
+                    <label id="labelCSenha" for='confirmSenha'>Confirmar Senha</label>
+                    <i id='verConfirmSenha' class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+    
+                <script>
+    
+                    let btn = document.querySelector('#verSenha')
+                    let btnConfirm = document.querySelector('#verConfirmSenha')
+                    
+                    btn.addEventListener('click', ()=>{
+                        let inputSenha = document.querySelector('#senha')
+    
+                        if(inputSenha.getAttribute('type') == 'password'){
+                            inputSenha.setAttribute('type', 'text')
+                        } else{
+                            inputSenha.setAttribute('type', 'password')
+                        }
+                    })
+                    btnConfirm.addEventListener('click', ()=>{
+                        let inputConfirmSenha = document.querySelector('#confirmSenha')
+    
+                        if(inputConfirmSenha.getAttribute('type') == 'password'){
+                            inputConfirmSenha.setAttribute('type', 'text')
+                        } else{
+                            inputConfirmSenha.setAttribute('type', 'password')
+                        }
+                    })
+                </script>
+    
+                <div class='justify-center'>
+                    <button onclick="cadastrar()" type="submit">Cadastrar</button>
+                </div>
+    </form>
+    
+
+    <!-- <div class='container'>
+
+        <div class ='card'>
+            <h1> Cadastre-se </h1>
+
+            <div id='msgError'></div>
+            <div id='msgSucess'></div>
+
+
+            <div class='label-float'>
+                <input type='text' id='nome' placeholder='' required>
+                <label id="labelNome" for='nome'>Nome</label>
+            </div>
+
+
+            <div class='label-float'>
+                <input type='text' id='usuario' placeholder='' required>
+                <label id="labelUsuario" for='usuario'>Usuário</label>
+            </div>
+
+            <div class='label-float'>
+                <input type='mail' id='email' placeholder='' required>
+                <label id="labelEmail" for='email'>Email</label>
+            </div>
+
+            <div class='label-float'>
+                <input type='text' id='idade' placeholder='' required>
+                <label id="labelIdade" for='idade'>Idade</label>
+            </div>
+
+            <div class='label-float'>
+                <input type='password' id='senha' placeholder='' required>
+                <label id="labelSenha" for='senha'>Senha</label>
+                <i id='verSenha' class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class='label-float'>
+                <input type='password' id='confirmSenha' placeholder=''required>
+                <label id="labelCSenha" for='confirmSenha'>Confirmar Senha</label>
+                <i id='verConfirmSenha' class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <script>
+
+                let btn = document.querySelector('#verSenha')
+                let btnConfirm = document.querySelector('#verConfirmSenha')
+                
+                btn.addEventListener('click', ()=>{
+                    let inputSenha = document.querySelector('#senha')
+
+                    if(inputSenha.getAttribute('type') == 'password'){
+                        inputSenha.setAttribute('type', 'text')
+                    } else{
+                        inputSenha.setAttribute('type', 'password')
+                    }
+                })
+                btnConfirm.addEventListener('click', ()=>{
+                    let inputConfirmSenha = document.querySelector('#confirmSenha')
+
+                    if(inputConfirmSenha.getAttribute('type') == 'password'){
+                        inputConfirmSenha.setAttribute('type', 'text')
+                    } else{
+                        inputConfirmSenha.setAttribute('type', 'password')
+                    }
+                })
+            </script>
+
+            <div class='justify-center'>
+                <button onclick="cadastrar()">Cadastrar</button>
+            </div> -->
+            <br> <br>
+            <p>Voltar a página de 
+                <a href='/Login'>login</a>
+            </p>
+
+
+        </div>
+
+    </div>
+
+</body>
+</html>

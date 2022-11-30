@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/operadores logicos.css">
+        <title>Operadores Lógicos</title>
+</head>
+
+<STYLE>A {text-decoration: none;} </STYLE> <!--Tirar Sublinhado do Link -->
+<style>
+    #All
+    {
+         width: 100%;
+    }
+</style>
+
+
+<!--/////////////////////////////////////////////MENU PADRÃO////////////////////////////////////////////-->
+<body>
+        <header>
+            <nav class="nav-bar"> 
+                <div class="logo">
+                    <h2><a href='/Pagina_Incial'>Aprende.py</a></h2>
+                    <img class="logo" src = "../img/logo.png" width="60" height="60" >
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li>
+                        <li class="nav-item"><a href="/Planeta_1" class="nav-link">Módulos</a></li>
+                        <li class="nav-item"><a href="/Modulo3" class="nav-link">Operações</a></li>
+                        <li class="nav-item"><a href="/Fontes_Mundo1" class="nav-link">Fontes</a></li>
+                        <li class="nav-item"><a href="/" class="nav-link">Sair</a></li>
+                    </ul>
+                </div>
+    
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="/Mundos" class="nav-link">Mundos</a></li>
+                    <li class="nav-item"><a href="/Planeta_1" class="nav-link">Módulos</a></li>
+                    <li class="nav-item"><a href="/Modulo3" class="nav-link">Operações</a></li>
+                    <li class="nav-item"><a href="/Fontes_Mundo1" class="nav-link">Fontes</a></li>
+                    <li class="nav-item"><a href="/" class="nav-link">Sair</a></li>
+                </ul>
+            </div>
+        </header>
+<!--///////////////////////////////////////////////////MENU PADRÃO ///////////////////////////////////////////-->
+
+        <!--///////////////////////////////////////////////////MENU PADRÃO ///////////////////////////////////////////-->
+        <div class= 'main'>
+            <div class = 'conteudo'>
+                <div class ='indice'>
+                    <label for="toggle-1">
+                        <h1 class = 'sum-titulo'>Sumário [Mostrar/Esconder]</h1>
+                    </label>
+                    <input type="checkbox" id="toggle-1">
+                    <div id="mostra">
+                        <ul class = "sumario">
+                            <li class="sum-item"><a href="#Titulo1" >Operadores Lógicos</li>
+                                <li class="sum-item"><a href="#Titulo2" >Introdução aos operadores lógicos</li> 
+                                <li class="sum-item"><a href="#Titulo3" > Valor Lógico</li>
+                                <li class="sum-item"><a href="#Titulo4" > O tipo de dado Booleano (bool)</li>
+                                <li class="sum-item"><a href="#Titulo5" > Conectivos lógicos</li>
+                                <li class="sum-item"><a href="#Titulo6" > Valores lógicos</li>
+                                <li class="sum-item"><a href="#Titulo7" > Conectivos lógicos</li>
+                                <li class="sum-item"><a href="#Titulo8" > Conectivo de conjunção E</li>
+                                <li class="sum-item"><a href="#Titulo9" > Conectivo de disjunção OU </li>
+                                <li class="sum-item"><a href="#Titulo10" > Expressões simples e compostas  </li>
+                        </ul>
+                    </div>  
+                </div>
+
+
+
+                <h1 class = 'titulo'><a name="Titulo1"></a> Lógicos</h1>
+
+                <h2 class = 'subtitulo'><a name="Titulo2"></a>Introdução aos operadores lógicos</h2>
+                    <p class = 'corpo'>Os operadores lógicos unem expressões lógicas formando assim, uma nova expressão que é composta por 2 ou mais sub-expressões. O resultado lógico de expressões compostas será a relação entre as sub-expressões. Como estudamos, toda expressão lógica avaliada resultará num valor lógico e a relação entre vários valores lógicos é um outro valor lógico.</p>
+                    <p class = 'corpo'>Quando estudamos os Operadores Relacionais aprendemos a obter o valor lógico entre 2 operandos, no caso, entre o operando que está a esquerda do operador e o operando que está a direita do Operador Relacional. Como resposta, obtemos valores do tipo Booleano, isto é, verdadeiro [True] ou falso [False].</p>
+                    <p class = 'corpo'>Os operadores lógicos por sua vez, permite-nos unir 2 expressões ligando-as com os conectivos lógicos matemáticos que são, o conectivo E e o conectivo OU.</p>
+                    
+                    <h2 class = 'subtitulo'><a name="Titulo3"></a>Valor Lógico</h2>
+                    <p class = 'corpo'>O valor lógico é um tipo de dado binário, isto é, assume um valor dentre duas opções: verdadeiro ou falso.</p>
+                    <p class = 'corpo'>Os valores lógicos são de fato a base de toda a computação, até porque, temos que, o bit está ligado ou o bit está desligado. O valor lógico em sua forma mais primitiva assume o número 1 quando verdadeiro e assume o valor 0 quando falso.</p>
+                    <p class = 'corpo'>Toda expressão avaliada na computação de maneira geral, resulta num valor lógico, isto é, ou a expressão é verdadeira, ou a expressão é falsa. Como aprenderemos de agora em diante, todas as estruturas da linguagem Python baseiam-se nos 2 valores lógicos possíveis.</p>
+                    
+                <h2 class = 'subtitulo'><a name="Titulo4"></a>O tipo de dado Booleano (bool)</h2>
+                    <p class = 'corpo'>O tipo de dado Booleano, que em Python é representado pela classe bool assume um valor dentre 2 valores constante: True ou False. A palavra Booleano vem do sobrenome do filósofo e matemático George Boole o criado da Álgebra Booleana .</p>
+                    <p class = 'corpo'>Se formos no IDLE e verificarmos com a instrução type() o tipo dos valores lógicos ou então, o tipo de uma expressão lógica, teremos como resposta o valor <class 'bool'>.</p>
+                    <center><img src="../img/bool.PNG"></center>
+                    <p class = 'corpo'>Como podemos ver acima o Python reconhece as 2 constantes como pertencentes ao tipo de dado bool, no caso, as constantes True e False. É importante notar que ambas constantes iniciam com letra maiúscula, do contrário, o Python tratará como sendo uma referência desconhecida.</p>
+                    
+                <h2 class = 'subtitulo'><a name="Titulo5"></a>Conectivos lógicos</h2>
+                    <p class = 'corpo'>As linguagens de programação, utilizam os conectivos lógicos da lógica formal, ou melhor da lógica Aristotélica, na construção de expressões lógicas. Existem 2 conectivos lógicos e, mesmo que não os conheçamos com o nome de conectivos lógicos, utilizamo-os constantemente ao conversarmos ou então, para explicarmos qualquer disciplina a outra pessoa.</p>
+                    <p class = 'corpo'>Os dois conectivos lógicos são:</p>
+                    <ul class = 'corpo'>
+                        <li class="item">Conectivo de conjunção: E</li>
+                        <li class="item">Conectivo de disjunção: OU</li>
+                    </ul>
+                    <p class = 'corpo'>Por exemplo, a simples frase A e B são caracteres iguais implica numa expressão lógica e acabamos de representar a mesma textualmente. Porém, a expressão pode ser facilmente escrita matematicamente, ou então, com o uso de uma linguagem de programação.</p>
+                    <p class = 'corpo'>Por essa razão, devemos olhar para as Linguagens de Programação como sendo, antes de tudo, formas ou estilos de Notação lógica. Como sabemos, existe a notação matemática que possui suas próprias regras e sua própria sintaxe. Existem algumas linguagens de programação que por exemplo, suportam a sintaxe matemática na definição de expressões e na composição de sentenças lógicas.</p>
+                    <p class = 'corpo'>Por fim, os conectivos lógicos devem ser entendidos como ferramenta de notação utilizada para unir duas ou mais expressões, e como resultado da união, forma-se uma nova expressão.</p>
+                    
+                <h2 class = 'subtitulo'><a name="Titulo6"></a>Avaliação de expressões</h2>
+
+                    <p class = 'corpo'>A avaliação de expressão em linguagens de programação é, o trabalho que o compilador ou interpretador faz, quando este, através de 2 expressões, avalia se a proposição, isto é, a expressão avaliada é ou não verdadeira.</p>
+                    <p class = 'corpo'>É importante observar que as expressões, são sempre avaliadas se são verdadeiras e é bom esse entendimento, até porque, podia ser o contrário, e as vezes será, quando assim desejarmos e utilizarmos uma notação especifica para isso.</p>
+                    <p class = 'corpo'>Então, por padrão, todas as expressão são avaliadas com a pergunta se são ou não verdadeiras.</p>
+                    
+                <h2 class = 'subtitulo'><a name="Titulo7"></a> Valores lógicos</h2>
+
+                    <p class = 'corpo'>A tabela de valor lógica é uma tabela que mostra o resultado da avaliação de 2 expressões lógicas. É importante observar que essa tabela NÃO é uma convenção, mas sim, o resultado da dedução lógica e que você pode facilmente deduzi-la.</p>
+                    <p class = 'corpo'>True E True é True True E False é False False E True é False</p>
+                    <p class = 'corpo'>True OU False é True False OU True é True True OU True é True False OU False é False</p>
+                    
+                <h2 class = 'subtitulo'><a name="Titulo8"></a>Conectivo de conjunção E</h2>
+                    <p class = 'corpo'>O conectivo lógico de conjunção E, une a expressão a sua esquerda a expressão a sua direita. Expressões com o uso do conectivo de conjunção originam frases em Português, mais ou menos assim: A é verdadeiro e B é verdadeiro.</p>
+                    <p class = 'corpo'>Nas situações em que A for verdadeiro e B também, o resultado, segundo a tabela lógica, será também verdadeiro.</p>
+                    <center><img src="../img/conect ee.PNG"></center>
+                    <p class = 'corpo'>No exemplo acima, temos uma expressão lógica composta constituida por 2 expressões lógicas simples e, ligadas pelo conectivo de conjunção.</p>
+                    <p class = 'corpo'>Primeira expressão simples: (var1 == 0) Segunda expressão simples expressão: (var1 == 0) Conectivo lógico de conjunção: and</p>
+                    <p class = 'corpo'>Para analisarmos uma expressão lógica composta, precisamos antes, analisar suas expressões lógicas simples.</p>
+                    <p class = 'corpo'>No trecho de código acima, a primeira sub-expressão, analisas se o valor da variável x é maior do que 0. A variável x está declarada na linha anterior a expressão e inicializada com o valor 1, por isso, a primeira sub-expressão é verdadeira.</p>
+                    <p class = 'corpo'>A segunda expressão, analisa se o valor da variável x é menor do que 100. O valor da variável x é igual a 1 e, por isso, menor do que 100. Por fim, obtivemos 2 valores lógicos e agora podemos deduzir o resultado lógica de toda expressão e o fazemos no trecho de código a seguir.</p>
+                    <center><img src="../img/true.PNG"></center>
+                    <p class = 'corpo'>No código acima, temos a mesma expressão do exemplo anterior, porém, substituimos as duas expressões lógicas simples por seus respectivos valores lógicos, isto é, o valor decorrente da análise lógica de cada sub-expressão.</p>
+                    <p class = 'corpo'>A expressão (True) and (True), se comparada com a Tabela Lógica de Valores, tem-se que o valor decorrente dessa segunda análise, será True, até porque, True and True == True.</p>
+                    
+                <h2 class = 'subtitulo'><a name="Titulo9"></a>Conectivo de disjunção OU</h2>
+                    <p class = 'corpo'>O conectivo lógico de disjunção OU liga a expressão a sua esquerda a expressão a sua direita. Expressões com o uso do conectivo de disjunção dão origem a frases em Português mais ou menos assim: A é verdadeiro OU B é verdadeiro.</p>
+                    <p class = 'corpo'>O operador lógico OU sempre precisará que uma das 2 sub-expressões conectadas sejam verdadeiras para que, a expressão num todo seja verdadeira.</p>
+                    <center><img src="../img/conect ou.PNG"></center>
+                    <p class = 'corpo'>A expressão lógica composta que temos no código acima, será desmembrada como estudado anteriormente, e agora, para que a avaliação seja verdadeira, uma das 2 expressões simples precisam ser verdadeiras.</p>
+                    <p class = 'corpo'>A primeira expressão (x > 10), a variável``x`` está declarada na linha anterior e inicializada com o valor igual a 1, logo, essa expressão é falsa, até porque, o valor de x não é maior do que 10.</p>
+                    <p class = 'corpo'>A segunda expressão (x < 100) está perguntando se o valor da variável x é menor do que o número 100. Essa expressão é verdadeira, até porque, o número 1 é menor do que o número 100.</p>
+                    <p class = 'corpo'>No código a seguir, temos a expressão originada a partir do código anterior.</p>
+                    <center><img src="../img/conect oou.PNG"></center>
+                    <p class = 'corpo'>Agora, temos que o primeiro valor lógico é falso, enquanto o segundo é verdadeiro. Esse valores estão ligados pelo conectivo de disjunção que será verdadeiro caso uma das sub-expressões o seja. Como o segundo valor lógico é verdadeiro, o valor decorrente dessa análise lógica será verdadeiro.</p>
+                    
+                <h2 class = 'subtitulo'><a name="Titulo10"></a>Expressões simples e compostas </h2>
+
+                    <p class = 'corpo'>Os operadores relacionais obtém a relação entre os operandos e, por isso, podemos chamar esse tipo de expressão como sendo, expressões simples.</p>
+                    <p class = 'corpo'>As expressões compostas, por sua vez, são a união de 2 ou mais expressões simples e, ligadas por algum conectivo lógico. A seguir, temos um exemplo utilizando o conectivo lógico de conjunção que une 2 expressões e dá origem a uma nova expressão lógica.</p>
+                    <center><img src="../img/simp.PNG"></center>
+                    <p class = 'corpo'>Em ambos exemplos, estamos unindo 2 membros, mas não estamos perguntando nada. Porém, a frase correta e que é utilizada pela grande maioria das linguagens de programação, senão todas, é a seguinte: A é verdadeiro e B é verdadeiro, logo .... Chamamos isso de expressão lógica ou melhor, expressão lógica composta, até porque, a expressão se origina de duas outras expressões, isto é, a que está ao lado esquerdo do operador relacional e a expressão que está ao seu lado direito.</p>
+                    
+                    <center>
+                        <a href = "/Modulo3/Operadores"><button class = "botao-mundo">Operadores</button></a>
+                    </center>
+                    
+                <a href="#" class="btn"></a>
+                <script src="../js/operadores logicos.js"></script>
+        </div>  
+     </div>
+    </div>
+
+
+
+</body>
+</html>
